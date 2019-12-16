@@ -582,3 +582,133 @@
   description = "Find current DNS servers"
   command = "cat /etc/resolv.conf"
   output = ""
+
+[[snippets]]
+  description = "Get the ip address option 1"
+  command = "ip address"
+  output = ""
+
+[[snippets]]
+  description = "Get the ip address option 2"
+  command = "ifconfig"
+  output = ""
+
+[[snippets]]
+  description = "Print the hostname"
+  command = "cat /etc/hostname"
+  output = ""
+
+[[snippets]]
+  description = "get the short hostname"
+  command = "hostname"
+  output = ""
+
+[[snippets]]
+  description = "Get hosts and related ips"
+  command = "cat /etc/hosts"
+  output = ""
+
+[[snippets]]
+  description = "get fully hostname"
+  command = "hostname -f"
+  output = ""
+
+[[snippets]]
+  description = "Update hostname"
+  command = "echo \"new.hostname\" > /etc/hostname"
+  output = ""
+
+[[snippets]]
+  description = "resolve the ip from host"
+  command = "host localhost"
+  output = ""
+
+[[snippets]]
+  description = "get hostname from IP address"
+  command = "host 127.0.0.1"
+  output = ""
+
+[[snippets]]
+  description = "File controls the search order for DNS resolution"
+  command = "cat /etc/nsswitch.conf"
+  output = ""
+
+[[snippets]]
+  description = "Maps port name to port number"
+  command = "cat /etc/services"
+  output = ""
+
+[[snippets]]
+  description = "Configure a DHCP Client - UBUNTU"
+  command = "nano /etc/network/interfaces"
+  output = ""
+
+[[snippets]]
+  description = "Manually assign an IP address"
+  command = "ip address add IP[/NETMASK] dev NETWORK_DEVICE"
+  output = ""
+
+[[snippets]]
+  description = "Manually assign an IP address (Example)"
+  command = "ip address add 10.11.12.13/255.255.255.0 dev eth0"
+  output = ""
+
+[[snippets]]
+  description = "Bring network interface up"
+  command = "ip link set eth0 up"
+  output = ""
+
+[[snippets]]
+  description = "Bring network interface down"
+  command = "ip link set eth0 down"
+  output = ""
+
+[[snippets]]
+  description = "Set network interface up"
+  command = "ifup eth0"
+  output = ""
+
+[[snippets]]
+  description = "Set network interface down"
+  command = "ifdown eth0"
+  output = ""
+
+[[snippets]]
+  description = "ping check with packet number"
+  command = "ping -c 10 google.com"
+  output = ""
+
+[[snippets]]
+  description = "diagnose the network connections"
+  command = "traceroute google.com"
+  output = ""
+
+[[snippets]]
+  description = "List of programs listening on tcp ports"
+  command = "netstat -ntlp"
+  output = ""
+
+[[snippets]]
+  description = "List of network interfaces stats"
+  command = "netstat -i"
+  output = ""
+
+[[snippets]]
+  description = "Packet sniffing"
+  command = "tcpdump"
+  output = ""
+
+[[snippets]]
+  description = "packet sniffing on human & verbose way"
+  command = "tcpdump -Anvvv"
+  output = ""
+
+[[snippets]]
+  description = "Examine connection with telnet"
+  command = "telnet google.com 80"
+  output = ""
+
+[[snippets]]
+  description = "get the server uptime"
+  command = "uptime"
+  output = ""
