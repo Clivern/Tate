@@ -1,0 +1,584 @@
+[[snippets]]
+  description = "ping google network"
+  command = "ping 8.8.88"
+  output = ""
+
+[[snippets]]
+  description = "List all including hidden"
+  command = "ls -al"
+  output = ""
+
+[[snippets]]
+  description = "List all"
+  command = "ls -l"
+  output = ""
+
+[[snippets]]
+  description = "Download Pet"
+  command = "export PET_VERSION=0.3.6;echo \"Download Pet $PET_VERSION\";curl -sL https://github.com/knqyf263/pet/releases/download/v{$PET_VERSION}/pet_{$PET_VERSION}_darwin_amd64.tar.gz | tar xz"
+  output = ""
+
+[[snippets]]
+  description = "Print file content"
+  command = "cat /path/to/file"
+  output = ""
+
+[[snippets]]
+  description = "get the size of files and dirs"
+  command = "du"
+  output = ""
+
+[[snippets]]
+  description = "get the size of files and dirs on human format"
+  command = "du -h"
+  output = ""
+
+[[snippets]]
+  description = "sort the content of file"
+  command = "sort README.md"
+  output = ""
+
+[[snippets]]
+  description = "Recursively list files and folders"
+  command = "ls -R"
+  output = ""
+
+[[snippets]]
+  description = "show groups of root user"
+  command = "groups root"
+  output = ""
+
+[[snippets]]
+  description = "show groups of current user"
+  command = "groups"
+  output = ""
+
+[[snippets]]
+  description = "Change user, group and other permissions for a directory"
+  command = "chmod -R u=rwx,g=rwx,o=rwx dir"
+  output = ""
+
+[[snippets]]
+  description = "Change user, group and other permissions for a directory [another format]"
+  command = "chmod -R u=rwx,g=rwx,o= dir"
+  output = ""
+
+[[snippets]]
+  description = "Add write permission to group to a directory"
+  command = "chmod -R g+w dir"
+  output = ""
+
+[[snippets]]
+  description = "Create a directory"
+  command = "mkdir dir"
+  output = ""
+
+[[snippets]]
+  description = "Create a new empty file"
+  command = "touch file"
+  output = ""
+
+[[snippets]]
+  description = "Get the type of a file"
+  command = "file README.md"
+  output = ""
+
+[[snippets]]
+  description = "Search for a file but not realtime like find"
+  command = "locate file"
+  output = ""
+
+[[snippets]]
+  description = "Scroll through file content"
+  command = "more file.md"
+  output = ""
+
+[[snippets]]
+  description = "Follow the file content"
+  command = "tail -f file.md"
+  output = ""
+
+[[snippets]]
+  description = "Find file with name file on /path"
+  command = "find /path -name file"
+  output = ""
+
+[[snippets]]
+  description = "Find files with name like file on /path"
+  command = "find /path -name file*"
+  output = ""
+
+[[snippets]]
+  description = "Find files with case insensitive search on /path"
+  command = "find /path -iname file"
+  output = ""
+
+[[snippets]]
+  description = "Find files by size"
+  command = "find /path -size 1MB"
+  output = ""
+
+[[snippets]]
+  description = "Find files by modification time"
+  command = "find /path -mtime 10"
+  output = ""
+
+[[snippets]]
+  description = "Delete a file"
+  command = "rm file"
+  output = ""
+
+[[snippets]]
+  description = "Delete a dir and files inside"
+  command = "rm -r dir"
+  output = ""
+
+[[snippets]]
+  description = "Force delete a dir and files inside"
+  command = "rm -rf dir"
+  output = ""
+
+[[snippets]]
+  description = "Copy a file"
+  command = "cp source_file dest_file"
+  output = ""
+
+[[snippets]]
+  description = "Copy directory"
+  command = "cp -r source_dir dest_dir"
+  output = ""
+
+[[snippets]]
+  description = "Copy a file (Interactive mode)"
+  command = "cp -i source_file dest_file"
+  output = ""
+
+[[snippets]]
+  description = "Move a file"
+  command = "mv source_file dest_file"
+  output = ""
+
+[[snippets]]
+  description = "Move a file (Interactive mode)"
+  command = "mv -i source_file dest_file"
+  output = ""
+
+[[snippets]]
+  description = "Move a directory"
+  command = "mv source_dir dest_dir"
+  output = ""
+
+[[snippets]]
+  description = "Compress a directory"
+  command = "tar -czvf target.tar.gz /dir/to/compress"
+  output = ""
+
+[[snippets]]
+  description = "Compress a directory & exclude some dirs"
+  command = "tar -czvf target.tar.gz --exclude='dir1' --exclude='dir2' /dir/to/compress"
+  output = ""
+
+[[snippets]]
+  description = "Extract a compressed directory"
+  command = "tar -xzvf file.tar.gz"
+  output = ""
+
+[[snippets]]
+  description = "Get messages from linux kernel"
+  command = "dmesg"
+  output = ""
+
+[[snippets]]
+  description = "Scroll through messages from linux kernel"
+  command = "dmesg -T | less"
+  output = ""
+
+[[snippets]]
+  description = "Follow messages from linux kernel"
+  command = "tail -f /var/log/dmesg"
+  output = ""
+
+[[snippets]]
+  description = "Test logrotate configs"
+  command = "logrotate -fv /etc/logrotate.conf"
+  output = ""
+
+[[snippets]]
+  description = "Redirect output to a file"
+  command = "ls -l > file.txt"
+  output = ""
+
+[[snippets]]
+  description = "Append output to a file"
+  command = "ls >> file.txt"
+  output = ""
+
+[[snippets]]
+  description = "Show types of all files on current dir"
+  command = "file *"
+  output = ""
+
+[[snippets]]
+  description = "Get all env vars"
+  command = "printenv"
+  output = ""
+
+[[snippets]]
+  description = "Get one env var"
+  command = "printenv HOME"
+  output = ""
+
+[[snippets]]
+  description = "Print env var"
+  command = "echo $HOME"
+  output = ""
+
+[[snippets]]
+  description = "Import env var"
+  command = "export var=value"
+  output = ""
+
+[[snippets]]
+  description = "remove env var"
+  command = "unset var"
+  output = ""
+
+[[snippets]]
+  description = "Print bash history"
+  command = "cat ~/.bash_history"
+  output = ""
+
+[[snippets]]
+  description = "Scroll through bash history"
+  command = "history | less"
+  output = ""
+
+[[snippets]]
+  description = "Get history size"
+  command = "echo $HISTSIZE"
+  output = ""
+
+[[snippets]]
+  description = "Change history size"
+  command = "export HISTSIZE=1000"
+  output = ""
+
+[[snippets]]
+  description = "Install a new crontab from a file"
+  command = "crontab file"
+  output = ""
+
+[[snippets]]
+  description = "List your cron jobs"
+  command = "crontab -l"
+  output = ""
+
+[[snippets]]
+  description = "Edit your cron jobs"
+  command = "crontab -e"
+  output = ""
+
+[[snippets]]
+  description = "Remove all of your cron jobs"
+  command = "crontab -r"
+  output = ""
+
+[[snippets]]
+  description = "Sort file content"
+  command = "sort < file.txt"
+  output = ""
+
+[[snippets]]
+  description = "Sort file content and store the result on another file"
+  command = "sort < file.txt > sorted_file.txt"
+  output = ""
+
+[[snippets]]
+  description = "List and send standard output to a file"
+  command = "ls 1> std.out"
+  output = ""
+
+[[snippets]]
+  description = "List and send standard error to a file"
+  command = "ls not-here 2> out.err"
+  output = ""
+
+[[snippets]]
+  description = "List and send standard output to a file and standard error to another"
+  command = "ls here not-here 1>std.out 2>out.err"
+  output = ""
+
+[[snippets]]
+  description = "List and send standard output and error to one file"
+  command = "ls here not-here > out.both 2>&1"
+  output = ""
+
+[[snippets]]
+  description = "List and ignore errors"
+  command = "ls here not-here 2>/dev/null"
+  output = ""
+
+[[snippets]]
+  description = "List and ignore both output and error"
+  command = "ls here not-here >/dev/null"
+  output = ""
+
+[[snippets]]
+  description = "List and ignore both standard output and standard error"
+  command = "ls here not-here >/dev/null 2>&1"
+  output = ""
+
+[[snippets]]
+  description = "Compare two files"
+  command = "diff file1.txt file2.txt"
+  output = ""
+
+[[snippets]]
+  description = "Compare two files side by side"
+  command = "sdiff file1.txt file2.txt"
+  output = ""
+
+[[snippets]]
+  description = "Print file contents with line numbers"
+  command = "cat -n file.txt"
+  output = ""
+
+[[snippets]]
+  description = "Find a pattern on file content"
+  command = "grep pattern file"
+  output = ""
+
+[[snippets]]
+  description = "Find pattern on all files including compressed ones"
+  command = "zgrep pattern /dir/out.log*"
+  output = ""
+
+[[snippets]]
+  description = "Get strings from a binary file"
+  command = "strings giant.mps"
+  output = ""
+
+[[snippets]]
+  description = "Get my account"
+  command = "whoami"
+  output = ""
+
+[[snippets]]
+  description = "Login to joe account"
+  command = "su joe"
+  output = ""
+
+[[snippets]]
+  description = "Login as joe with his env configs"
+  command = "su - joe"
+  output = ""
+
+[[snippets]]
+  description = "Run a command as if from joe account"
+  command = "su -c 'echo $JOE_HOME' - joe"
+  output = ""
+
+[[snippets]]
+  description = "Run a command as root"
+  command = "sudo -u root command"
+  output = ""
+
+[[snippets]]
+  description = "Run a command as user"
+  command = "sudo -u user command"
+  output = ""
+
+[[snippets]]
+  description = "switch to superuser account"
+  command = "sudo su"
+  output = ""
+
+[[snippets]]
+  description = "Switch to superuser account with his env"
+  command = "sudo su -"
+  output = ""
+
+[[snippets]]
+  description = "switch to username account"
+  command = "sudo su - username "
+  output = ""
+
+[[snippets]]
+  description = "Edit sudoers file"
+  command = "nano /etc/sudoers"
+  output = ""
+
+[[snippets]]
+  description = "Show current session processes"
+  command = "ps"
+  output = ""
+
+[[snippets]]
+  description = "Display all processes"
+  command = "ps -e"
+  output = ""
+
+[[snippets]]
+  description = "Display all processes in a full format"
+  command = "ps -ef"
+  output = ""
+
+[[snippets]]
+  description = "Display a process tree"
+  command = "ps -eH"
+  output = ""
+
+[[snippets]]
+  description = "Display user processes"
+  command = "ps -u root"
+  output = ""
+
+[[snippets]]
+  description = "processes on a tree format"
+  command = "pstree"
+  output = ""
+
+[[snippets]]
+  description = "interactive process viewer (top)"
+  command = "top"
+  output = ""
+
+[[snippets]]
+  description = "interactive process viewer (htop)"
+  command = "htop"
+  output = ""
+
+[[snippets]]
+  description = "run process on background"
+  command = "./long-process &"
+  output = ""
+
+[[snippets]]
+  description = "get all jobs (background processes)"
+  command = "jobs"
+  output = ""
+
+[[snippets]]
+  description = "get job with id 1"
+  command = "jobs %1"
+  output = ""
+
+[[snippets]]
+  description = "move jobs 1 to foreground"
+  command = "fg %1"
+  output = ""
+
+[[snippets]]
+  description = "move job 1 to background"
+  command = "bg %1"
+  output = ""
+
+[[snippets]]
+  description = "List all kill signals"
+  command = "kill -l"
+  output = ""
+
+[[snippets]]
+  description = "send a signal to a process id"
+  command = "kill [-sig] pid"
+  output = ""
+
+[[snippets]]
+  description = "kill a process"
+  command = "kill $pid"
+  output = ""
+
+[[snippets]]
+  description = "send a kill signal to process since KILL SIGNAL is num 9"
+  command = "kill -9 $PID"
+  output = ""
+
+[[snippets]]
+  description = "Create a new group"
+  command = "groupadd $group_name"
+  output = ""
+
+[[snippets]]
+  description = "Delete a group"
+  command = "groupdel $group_name"
+  output = ""
+
+[[snippets]]
+  description = "Rename a group"
+  command = "groupmod -n $new_group_name $current_group_name"
+  output = ""
+
+[[snippets]]
+  description = "Create a system account"
+  command = "useradd -c \"Apache Server User\" -d /opt/apache -r -s /usr/sbin/nologin apache"
+  output = ""
+
+[[snippets]]
+  description = "Delete a user account"
+  command = "userdel $username"
+  output = ""
+
+[[snippets]]
+  description = "Delete a user account with home dir"
+  command = "userdel -r $username"
+  output = ""
+
+[[snippets]]
+  description = "Update the user password"
+  command = "passwd $username"
+  output = ""
+
+[[snippets]]
+  description = "Create a user & provide all options"
+  command = "useradd -c \"Comment Here\" -m -s /bin/bash -g default_group -G group1,group2 $username"
+  output = ""
+
+[[snippets]]
+  description = "Print all users info"
+  command = "cat /etc/passwd"
+  output = ""
+
+[[snippets]]
+  description = "Print ecrypted passwords for users"
+  command = "cat /etc/shadow"
+  output = ""
+
+[[snippets]]
+  description = "Create an alias"
+  command = "alias cls='clear'"
+  output = ""
+
+[[snippets]]
+  description = "remove an alias"
+  command = "unalias $name"
+  output = ""
+
+[[snippets]]
+  description = "Remove all aliases"
+  command = "unalias -a"
+  output = ""
+
+[[snippets]]
+  description = "Get shell prompt"
+  command = "echo $PS1"
+  output = ""
+
+[[snippets]]
+  description = "Generate a random password"
+  command = "openssl rand -base64 8"
+  output = ""
+
+[[snippets]]
+  description = "Get current ubuntu version"
+  command = "cat /etc/lsb-release"
+  output = ""
+
+[[snippets]]
+  description = "Find a process that listen on port 8080"
+  command = "lsof -i :8080"
+  output = ""
+
+[[snippets]]
+  description = "Find current DNS servers"
+  command = "cat /etc/resolv.conf"
+  output = ""
