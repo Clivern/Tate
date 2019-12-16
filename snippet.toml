@@ -712,3 +712,43 @@
   description = "get the server uptime"
   command = "uptime"
   output = ""
+
+[[snippets]]
+  description = "Print all git repos from a user"
+  command = "curl -s https://api.github.com/users/$username/repos\\?per_page\\=1000 |grep git_url |awk '{print $2}'| sed 's/\"\\(.*\\)\",/\\1/'"
+  output = ""
+
+[[snippets]]
+  description = "Console clock"
+  command = "while sleep 1; do tput sc; tput cup 0 $(($(tput cols)-29)); date; tput rc; done &"
+  output = ""
+
+[[snippets]]
+  description = "Print the date on iso format"
+  command = "date +%Y-%m-%dT%H:%M:%S%z"
+  output = ""
+
+[[snippets]]
+  description = "Show all current listening programs by port and pid"
+  command = "ss -plunt"
+  output = ""
+
+[[snippets]]
+  description = "Show top 50 running processes ordered by highest memory/cpu"
+  command = "watch -n1 \"ps aux --sort=-%mem,-%cpu | head -n 50\""
+  output = ""
+
+[[snippets]]
+  description = "Get your public IP address"
+  command = "curl checkip.amazonaws.com"
+  output = ""
+
+[[snippets]]
+  description = "Find all clients connected to HTTP or HTTPS ports"
+  command = "ss -o state established '( dport = :http or sport = :https )'"
+  output = ""
+
+[[snippets]]
+  description = "Which processes are listening on a specific port (e.g. port 80)"
+  command = "netstat -nap|grep 80|grep LISTEN"
+  output = ""
