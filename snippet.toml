@@ -752,3 +752,93 @@
   description = "Which processes are listening on a specific port (e.g. port 80)"
   command = "netstat -nap|grep 80|grep LISTEN"
   output = ""
+
+[[snippets]]
+  description = "Install Docker"
+  command = "apt-get update; sudo apt install docker.io; sudo systemctl enable docker"
+  output = ""
+
+[[snippets]]
+  description = "List docker images"
+  command = "docker images"
+  output = ""
+
+[[snippets]]
+  description = "Remove docker image by id"
+  command = "docker rmi $imageId"
+  output = ""
+
+[[snippets]]
+  description = "Pull docker image"
+  command = "docker pull $image:$tag"
+  output = ""
+
+[[snippets]]
+  description = "Searching docker images"
+  command = "docker search <term>"
+  output = ""
+
+[[snippets]]
+  description = "Login to docker hub"
+  command = "docker login"
+  output = ""
+
+[[snippets]]
+  description = "Tag a docker image"
+  command = "docker tag <image_id> clivern/nginx:1.0.0"
+  output = ""
+
+[[snippets]]
+  description = "Push docker image to docker hub"
+  command = "docker push clivern/nginx"
+  output = ""
+
+[[snippets]]
+  description = "Run docker ubuntu 18.04 interactively"
+  command = "docker run -it ubuntu:18.04 bash"
+  output = ""
+
+[[snippets]]
+  description = "Show all docker containers"
+  command = "docker ps -a"
+  output = ""
+
+[[snippets]]
+  description = "Bootstrap chef node"
+  command = "knife bootstrap x.x.x.x --ssh-user root --sudo --identity-file ~/.ssh/id_rsa.pub --node-name y.ocomproduction.local"
+  output = ""
+
+[[snippets]]
+  description = "Create chef encrypted data bag"
+  command = "knife data bag create cloud parameters --secret-file .chef/encrypted_data_bag_secret"
+  output = ""
+
+[[snippets]]
+  description = "Backup chef encrypted data bag"
+  command = "knife raw /data/cloud/parameters > ./data_bags/cloud/parameters.json"
+  output = ""
+
+[[snippets]]
+  description = "Edit a chef node"
+  command = "knife node edit y.ocomproduction.local"
+  output = ""
+
+[[snippets]]
+  description = "Get linux package"
+  command = "dpkg --list | grep chef"
+  output = ""
+
+[[snippets]]
+  description = "Download chef client 13.12.14"
+  command = "wget https://packages.chef.io/files/stable/chef/13.12.14/ubuntu/16.04/chef_13.12.14-1_amd64.deb"
+  output = ""
+
+[[snippets]]
+  description = "Install chef client 13.12.14"
+  command = "dpkg -i chef_13.12.14-1_amd64.deb"
+  output = ""
+
+[[snippets]]
+  description = "Delete rotated logs from /var/log"
+  command = "sudo find /var/log/ -type f -regex '.*\\.[0-9]+\\.gz$' -delete"
+  output = ""
