@@ -842,3 +842,8 @@
   description = "Delete rotated logs from /var/log"
   command = "sudo find /var/log/ -type f -regex '.*\\.[0-9]+\\.gz$' -delete"
   output = ""
+
+[[snippets]]
+  description = "Start a java project with gradle"
+  command = "gradle init"
+  output = ""
