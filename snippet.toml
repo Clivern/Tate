@@ -847,3 +847,13 @@
   description = "Start a java project with gradle"
   command = "gradle init"
   output = ""
+
+[[snippets]]
+  description = "Linux tutorials 01"
+  command = "open 'https://linuxize.com/'"
+  output = ""
+
+[[snippets]]
+  description = "Rust standard packages docs"
+  command = "rustup doc --std"
+  output = ""
