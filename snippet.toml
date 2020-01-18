@@ -857,3 +857,18 @@
   description = "Rust standard packages docs"
   command = "rustup doc --std"
   output = ""
+
+[[snippets]]
+  description = "Define kubernetes kubeconfig file path"
+  command = "export KUBECONFIG=\"/path/to/kubeconfig.yaml\""
+  output = ""
+
+[[snippets]]
+  description = "Get kubernetes nodes"
+  command = "kubectl --kubeconfig=\"./kubeconfig.yaml\" get nodes"
+  output = ""
+
+[[snippets]]
+  description = "Get public key fingerprint"
+  command = "ssh-keygen -lf ~/.ssh/id_rsa.pub"
+  output = ""
