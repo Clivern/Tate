@@ -872,3 +872,8 @@
   description = "Get public key fingerprint"
   command = "ssh-keygen -lf ~/.ssh/id_rsa.pub"
   output = ""
+
+[[snippets]]
+  description = "Sync folder or files from one place to another"
+  command = "rsync -avzP /from/source root@127.0.0.1:/to/destination"
+  output = ""
