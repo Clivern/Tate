@@ -877,3 +877,38 @@
   description = "Sync folder or files from one place to another"
   command = "rsync -avzP /from/source root@127.0.0.1:/to/destination"
   output = ""
+
+[[snippets]]
+  description = "Get Server total memory"
+  command = "dmidecode -t 17 | grep -i size"
+  output = ""
+
+[[snippets]]
+  description = "Get Server memory usage"
+  command = "free -h"
+  output = ""
+
+[[snippets]]
+  description = "Netcat server"
+  command = "nc -l localhost 2003"
+  output = ""
+
+[[snippets]]
+  description = "Send to a TCP server with netcat"
+  command = "nc localhost 2003"
+  output = ""
+
+[[snippets]]
+  description = "Get a list of open PRs on github for a given repository"
+  command = "gh -R clivern/beaver pr list --state open"
+  output = ""
+
+[[snippets]]
+  description = "Get a list of github open issues for a given repository"
+  command = "gh -R clivern/beaver issue list --state open"
+  output = ""
+
+[[snippets]]
+  description = "Remove file from git history"
+  command = "git filter-branch --index-filter \"git rm -rf --cached --ignore-unmatch path/to/file\" HEAD"
+  output = ""
