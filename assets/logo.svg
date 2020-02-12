@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Tate">
+  <rect width="120" height="120" rx="24" fill="#1C1B19"/>
+  <path d="M62 18c-14 0-26 6-26 14v8h26c14 0 26-6 26-14S76 18 62 18z" fill="#3776AB"/>
+  <path d="M58 102c14 0 26-6 26-14v-8H58c-14 0-26 6-26 14s12 14 26 14z" fill="#FFD43B"/>
+  <circle cx="48" cy="32" r="4" fill="#F9F9F7"/>
+  <circle cx="72" cy="88" r="4" fill="#1C1B19"/>
+  <rect x="34" y="44" width="52" height="32" rx="6" fill="#F9F9F7"/>
+  <rect x="42" y="52" width="22" height="4" rx="2" fill="#3776AB"/>
+  <rect x="42" y="60" width="36" height="4" rx="2" fill="#898781"/>
+  <rect x="42" y="68" width="28" height="4" rx="2" fill="#898781"/>
+</svg>

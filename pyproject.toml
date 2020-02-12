@@ -1,0 +1,20 @@
+[project]
+name = "tate"
+version = "0.1.0"
+description = "Numbered Python lessons: language and standard library"
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = []
+
+[dependency-groups]
+dev = ["ruff>=0.9.0"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+include = ["[0-9][0-9][0-9]_*/main.py", "site/*.py"]
+
+[tool.ruff.format]
+quote-style = "double"
